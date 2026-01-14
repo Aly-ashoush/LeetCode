@@ -1,7 +1,7 @@
 1class Solution(object):
 2    def checkPrimeFrequency(self, nums):
 3        frequency={}
-4        primes = [
+4        primes = {
 5    2, 3, 5, 7,
 6    11, 13, 17, 19,
 7    23, 29, 31, 37,
@@ -9,7 +9,7 @@
 9    59, 61, 67, 71,
 10    73, 79, 83, 89,
 11    97
-12]
+12}
 13        for i in nums:
 14            if i  in frequency:
 15                frequency[i]+=1
